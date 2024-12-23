@@ -116,7 +116,7 @@ const QuizPage = () => {
           {/* Display the question image if it exists */}
           {img && (
             <div className="question-image">
-              <img className="question-img" src={`/img/${img}`} />
+              <img className="question-img" src={`img/${img}`} />
             </div>
           )}
           <span className="question-center">{`Note: There are ${correctAnswers.length} correct answers to this question`}</span>
