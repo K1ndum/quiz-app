@@ -11,9 +11,10 @@ const QuizPage = () => {
 
   // Fetch quiz questions from the JSON file
   useEffect(() => {
-    fetch('/Questions.json')
+    fetch(`${process.env.PUBLIC_URL}/Questions.json`)
       .then((response) => response.json())
-      .then((data) => setQuestions(data));
+      .then((data) => setQuestions(data))
+      .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
   // Handle user answer selection
