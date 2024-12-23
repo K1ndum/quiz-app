@@ -18,6 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://K1ndum.github.io/quiz-app",
   "eslintConfig": {
     "extends": [
       "react-app",
